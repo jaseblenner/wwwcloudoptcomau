@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Page.astro'
+import Container from '../components/Container.astro';
+
+const seo = {
+  title: 'cloudopt',
+  description: 'cloudopt',
+}
+---
+
+<style>
+  .hero__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    text-align: center;
+  }
+</style>
+
+<Layout seo={seo}>
+  <Container narrow>
+    <article class="hero__article">
+      <h2 class="fade-in">coming soon</h2>
+    </article>
+  </Container>
+</Layout>
