@@ -1,0 +1,81 @@
+---
+import Layout from '../layouts/Page.astro'
+import Container from '../components/Container.astro';
+
+const seo = {
+  title: 'cloudopt | services',
+  description: 'cloudopt | services',
+}
+---
+<!-- Define the styles for the hero article and navigation links -->
+<style>
+  /* Styles for the hero article */
+  .hero__article {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack the children vertically */
+    justify-content: center; /* Center the children vertically */
+    align-items: center; /* Center the children horizontally */
+    min-height: 70vh; /* Set a minimum height */
+    text-align: center; /* Center the text */
+    margin-top: 20px;
+  }
+
+  /* Styles for the navigation links */
+  .nav-links {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the links horizontally */
+  }
+
+  /* Add a right margin to all links except the last one */
+  .nav-links a:not(:last-child) {
+    margin-right: 40px;
+  }
+</style>
+
+<!-- Start of the layout component -->
+<Layout seo={seo}>
+  <!-- Start of the container component -->
+  <Container narrow>
+    <!-- Navigation links -->
+    <div class="nav-links">
+      <a href="/">home</a>
+      <a href="/services">services</a>
+      <a href="/whoweare">who we are</a>
+      <a href="mailto:contact@cloudopt.com.au?subject=hello" target="_blank">contact</a>
+    </div>
+    <!-- Hero article -->
+    <article class="hero__article">
+      <h2 class="fade-in">services</h2>
+      <h6 class="fade-in">Architecture</h6>
+      <p class="fade-in p-services">
+        • Design and implementation of scalable, tailored solution architectures for public, private, and hybrid clouds.<br>
+        • Strategic planning and consulting for cloud infrastructure optimization.<br>
+        • Integration of cloud services with existing on-premises systems and SaaS products.<br><br>
+      </p>
+      <h6 class="fade-in">Automation</h6>
+      <p class="fade-in p-services">
+        • DevOps and Cloud Automation strategy, tailored implementation focused on upskilling existing teams.<br>
+        • Implementation of self-service, developer centric CI/CD pipelines and platforms unlocking efficient software development.<br>
+        • Automation of security, governance and compliance checks for enhanced protection.<br><br>
+      </p>
+      <h6 class="fade-in">Engineering</h6>
+      <p class="fade-in p-services">
+        • DevOps and Cloud Center of Excellence (CCoE) implementations.<br>
+        • Cost Optimization, Security Uplift and Best Practice optimization of cloud services.<br>
+        • Development and deployment of robust, automated cloud landing zones and cloud platforms.<br><br>
+      </p>
+      <h6 class="fade-in">Modernisation</h6>
+      <p class="fade-in p-services">
+        • Migration and uplift of legacy systems to cloud platforms.<br>
+        • Assessments and uplifts of existing cloud environments.<br>
+        • Adoption of microservices based architectures enabling agile, innovative application development.<br><br>
+      </p>
+      <h6 class="fade-in">Transformation</h6>
+      <p class="fade-in p-services">
+        • End-to-end management of cloud transformation initiatives.<br>
+        • Strategic guidance on leveraging cloud technologies to drive business growth.<br>
+        • Transformation of IT operations through 'as-code' approaches and DevOps practices.<br><br>
+      </p>
+    </article>
+  </Container>
+</Layout>

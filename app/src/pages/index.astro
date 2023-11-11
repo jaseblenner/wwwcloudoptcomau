@@ -7,22 +7,46 @@ const seo = {
   description: 'cloudopt',
 }
 ---
-
+<!-- Define the styles for the hero article and navigation links -->
 <style>
+  /* Styles for the hero article */
   .hero__article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 70vh;
-    text-align: center;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack the children vertically */
+    justify-content: center; /* Center the children vertically */
+    align-items: center; /* Center the children horizontally */
+    min-height: 70vh; /* Set a minimum height */
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Adjust this value as needed */
+  }
+
+  /* Styles for the navigation links */
+  .nav-links {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the links horizontally */
+  }
+
+  /* Add a right margin to all links except the last one */
+  .nav-links a:not(:last-child) {
+    margin-right: 40px;
   }
 </style>
 
+<!-- Start of the layout component -->
 <Layout seo={seo}>
+  <!-- Start of the container component -->
   <Container narrow>
+    <!-- Navigation links -->
+    <div class="nav-links">
+      <a href="/">home</a>
+      <a href="/services">services</a>
+      <a href="/whoweare">who we are</a>
+      <a href="mailto:contact@cloudopt.com.au?subject=hello" target="_blank">contact</a>
+    </div>
+    <!-- Hero article -->
     <article class="hero__article">
-      <h2 class="fade-in">coming soon</h2>
+      <h2 class="fade-in">cloudopt</h2>
+      <h5 class="fade-in">☁️ melbourne, australia</h5>
     </article>
   </Container>
 </Layout>

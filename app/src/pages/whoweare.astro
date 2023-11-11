@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/Page.astro'
+import Container from '../components/Container.astro';
+
+const seo = {
+  title: 'cloudopt | who we are',
+  description: 'cloudopt | who we are',
+}
+---
+<!-- Define the styles for the hero article and navigation links -->
+<style>
+  /* Styles for the hero article */
+  .hero__article {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack the children vertically */
+    justify-content: center; /* Center the children vertically */
+    align-items: center; /* Center the children horizontally */
+    min-height: 70vh; /* Set a minimum height */
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Adjust this value as needed */
+  }
+
+  /* Styles for the navigation links */
+  .nav-links {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the links horizontally */
+  }
+
+  /* Add a right margin to all links except the last one */
+  .nav-links a:not(:last-child) {
+    margin-right: 40px;
+  }
+</style>
+
+<!-- Start of the layout component -->
+<Layout seo={seo}>
+  <!-- Start of the container component -->
+  <Container narrow>
+    <!-- Navigation links -->
+    <div class="nav-links">
+      <a href="/">home</a>
+      <a href="/services">services</a>
+      <a href="/whoweare">who we are</a>
+      <a href="mailto:contact@cloudopt.com.au?subject=hello" target="_blank">contact</a>
+    </div>
+    <!-- Hero article -->
+    <article class="hero__article">
+      <h2 class="fade-in">who we are</h2>
+    <!-- Body of text -->
+    <section>
+      <p class="fade-in p-whoweare">
+        <br>
+        Based out of Melbourne, Cloudopt specialises in architecture, engineering, automation, and the transformation and modernisation of technology infrastructures comprising a diverse range of technologies across public, private and hybrid clouds.
+        <br><br>
+        We not only facilitate companies in their journey to the cloud but also optimise existing cloud and technology systems. By identifying gaps and opportunities across your technology portfolio, we focus on automation, enhancement, simplification, and cost efficiency.
+        <br><br>
+        At Cloudopt, we're not just about implementing technology; we're about transforming your business. We are focussed on not only the technology but also how enhancing governance, process, team upskilling and ways of working can add immense value to your business.
+        <br><br>
+        Our experience spans diverse sectors in Australia and the UK, including finance, health, logistics, transport, defence, air traffic control and energy. Cloudopt are uniquely positioned to understand diverse industry challenges, enabling us to deliver industry-specific solutions tailored to you.
+        <br><br>
+        Choosing Cloudopt means embracing the present and preparing for the future. As your partner in cloud technology, we are committed to maximising cloud technology's potential, ensuring your business not only keeps pace but leads in your industry.
+      </p>
+    </section>
+    </article>
+  </Container>
+</Layout>
