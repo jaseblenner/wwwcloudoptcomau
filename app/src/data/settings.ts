@@ -1,6 +1,6 @@
 export const settings = {
   site: 'https://www.cloudopt.com.au',
   name: 'cloudopt',
-  title: 'cloudopt - landing page',
-  description: 'cloudopt - landing page',
+  title: 'Cloudopt | Cloud Solutions & Expertise | Melbourne, Australia',
+  description: 'Based in Melbourne, Cloudopt specializes in tailored cloud technology solutions centred around architecture, engineering, modernisation, and transformation.',
 }
