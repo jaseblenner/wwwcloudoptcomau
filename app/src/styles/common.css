@@ -1,0 +1,22 @@
+/* common.css */
+/* Styles for the hero article */
+.hero__article {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack the children vertically */
+    justify-content: center; /* Center the children vertically */
+    align-items: center; /* Center the children horizontally */
+    min-height: 70vh; /* Set a minimum height */
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Adjust this value as needed */
+  }
+
+  /* Styles for the navigation links */
+  .nav-links {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the links horizontally */
+  }
+
+  /* Add a right margin to all links except the last one */
+  .nav-links a:not(:last-child) {
+    margin-right: 40px;
+  }

@@ -1,37 +1,16 @@
 ---
 import Layout from '../layouts/Page.astro'
 import Container from '../components/Container.astro';
+import { SEO } from "astro-seo";
+import '../styles/common.css'
 
 const seo = {
-  title: 'cloudopt | services',
-  description: 'cloudopt | services',
+  title: 'Cloudopt | Cloud Solutions & Expertise | Services',
+  site_name: 'cloudopt',
+  description: 'Based in Melbourne, Cloudopt specializes in tailored cloud technology solutions centred around architecture, engineering, modernisation, and transformation.',
+  type: 'website',
 }
 ---
-<!-- Define the styles for the hero article and navigation links -->
-<style>
-  /* Styles for the hero article */
-  .hero__article {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack the children vertically */
-    justify-content: center; /* Center the children vertically */
-    align-items: center; /* Center the children horizontally */
-    min-height: 70vh; /* Set a minimum height */
-    text-align: center; /* Center the text */
-    margin-top: 20px;
-  }
-
-  /* Styles for the navigation links */
-  .nav-links {
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center the links horizontally */
-  }
-
-  /* Add a right margin to all links except the last one */
-  .nav-links a:not(:last-child) {
-    margin-right: 40px;
-  }
-</style>
-
 <!-- Start of the layout component -->
 <Layout seo={seo}>
   <!-- Start of the container component -->
