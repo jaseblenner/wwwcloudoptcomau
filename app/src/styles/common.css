@@ -10,6 +10,10 @@
     margin-top: 20px; /* Adjust this value as needed */
   }
 
+  ::selection {
+    background: transparent; /* No background colour when selecitng text */
+  }
+
   /* Styles for the navigation links */
   .nav-links {
     display: flex; /* Use flexbox for layout */
