@@ -14,7 +14,7 @@ resource "cloudflare_pages_project" "cloudopt" {
       deployments_enabled           = true
       production_deployment_enabled = true
       preview_deployment_setting    = "custom"
-      preview_branch_includes       = ["main", "develop"]
+      preview_branch_includes       = ["main", "dev*"]
     }
   }
 
