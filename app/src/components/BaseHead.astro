@@ -47,6 +47,10 @@ const image = new URL(Astro.props.image || 'assets/images/card.png', Astro.site)
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={image} />
 
+<!-- Local Assets -->
+<link rel="preload" href="/assets/fonts/roboto-flex.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="image" href="/assets/images/hero-logo.png">
+
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,15 +62,6 @@ onload="this.onload=null;this.rel='stylesheet'">
 <noscript>
   <link
     href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet"
-    type="text/css">
-</noscript>
-
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,slnt,wdth,wght@8..144,-4,40,600;8..144,-4,59.1,600;8..144,-4,125,600&family=Open+Sans&display=swap" as="style"
-onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,slnt,wdth,wght@8..144,-4,40,600;8..144,-4,59.1,600;8..144,-4,125,600&family=Open+Sans&display=swap"
     rel="stylesheet"
     type="text/css">
 </noscript>

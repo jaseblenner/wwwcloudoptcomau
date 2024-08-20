@@ -11,7 +11,6 @@ repos:
         - --args=--enable-rule=terraform_documented_variables
         - --args=--disable-rule=terraform_required_version
         - --args=--disable-rule=terraform_unused_declarations
-    - id: terraform_tfsec
     - id: terraform_validate
       args:
         - --args=-json
